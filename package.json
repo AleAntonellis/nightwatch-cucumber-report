@@ -1,0 +1,25 @@
+{
+  "name": "nightwatch-cucumber-report",
+  "version": "1.0.0",
+  "description": "An easy way to get started and create a functional test report with nightwatch-api, cucumber and cucumber-html-reporter",
+  "scripts": {
+    "test:setup": "babel-node setup/server.js",
+    "test:run": "cucumber-js --require-module babel-core/register --require setup/support --require step-definitions --format json:reports/report.json",
+    "test": "start-server-and-test test:setup http-get://localhost:4444/status test:run && node setup/report/setup.js"
+  },
+  "author": "Alessio Antonellis",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chromedriver": "^2.44.1",
+    "cucumber": "^5.0.3",
+    "cucumber-html-reporter": "^4.0.4",
+    "geckodriver": "^1.14.1",
+    "nightwatch": "1.0.11",
+    "nightwatch-api": "^1.0.0",
+    "start-server-and-test": "^1.7.11"
+  }
+}

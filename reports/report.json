@@ -1,0 +1,49 @@
+[
+  {
+    "description": "    To establish that our website has an Home Page",
+    "keyword": "Feature",
+    "name": "Test Bing Home",
+    "line": 1,
+    "id": "test-bing-home",
+    "tags": [],
+    "uri": "features\\bing.home.feature",
+    "elements": [
+      {
+        "id": "test-bing-home;verify-home-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify Home Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open the Bing home page",
+            "match": {
+              "location": "Project\\nightwatch-cucumber-report\\node_modules\\cucumber\\src\\support_code_library_builder\\build_helpers.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the title is \"Bing\"",
+            "match": {
+              "location": "Project\\nightwatch-cucumber-report\\node_modules\\cucumber\\src\\support_code_library_builder\\build_helpers.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
